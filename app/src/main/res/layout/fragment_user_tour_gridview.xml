@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:columnWidth="140dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="15dp"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="spacingWidthUniform"
+        android:id="@+id/user_tour_grid_view"/>
+
+</LinearLayout>

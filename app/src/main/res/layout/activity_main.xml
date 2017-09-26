@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.cilo.opentour.ActivityMain">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Sign in:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_layout_logo"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bluedeep"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Open"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Tour"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_logo"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linear_layout_top"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Username | Email"
+            android:textSize="13dp"
+            android:id="@+id/username"/>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="13dp"
+            android:id="@+id/pwd"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:padding="7dp"
+            android:background="#54a846"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:text="Signin"
+            android:id="@+id/signin_btn"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_top"
+        android:layout_marginTop="20dp"
+        android:background="#eee"
+        android:paddingRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:padding="0dp"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:textColor="#4b88cc"
+            android:text="Sign Up"
+            android:id="@+id/signup_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="|"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            android:textColor="#4b88cc"
+            android:text="Forgot Password"
+            android:id="@+id/forgot_pwd_btn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/tool_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:text="Your profile.."/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/user_pic"
+                    android:background="#ccc"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:padding="7dp"
+                    android:textSize="13dp"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:text="Change Pic"
+                    android:id="@+id/upload_btn"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:hint="Username"
+                    android:id="@+id/username"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:hint="Email"
+                    android:id="@+id/email"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:id="@+id/pwd"/>
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:inputType="textPassword"
+                    android:hint="Confirm password"
+                    android:id="@+id/pwd2"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:textSize="13dp"
+                    android:text="Make changes"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

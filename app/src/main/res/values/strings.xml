@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">OpenTour</string>
+    <string name="action_my_tours">My tours</string>
+    <string name="action_open_tour">Open tour</string>
+    <string name="open_tour_explained">Open tour improves your travelling experience. You will be able to start a tour and every content you upload in your tour will be clustered in one album. Ofcourse you will have full control of your content. You will be able to delete, edit or make them private.</string>
+    <string name="how_it_works_text_one">Click the \"Open Tour\" button</string>
+    <string name="how_it_works_two">You will be required to give: Tour name, Place to visit, Country and date of tour</string>
+    <string name="how_it_works_three">Once that is done, a tour album will be created. Therefore, any photos that you post while the tour button is \"Open\" will be stored automatically in the created tour album.</string>
+    <string name="how_it_works_four">Once you are done with the tour, you can close the tour by pressing \"Close Tour\" button.</string>
+    <string name="how_it_works_five">The button will change automatically to \"Open\"</string>
+    <string name="title_activity_open_tour">OpenTour</string>
+    <string name="action_read_open_tour">About Open tour</string>
+</resources>
